@@ -24,6 +24,7 @@
   --cyan-process: #5bc0eb;
   --ghost-white: #FFFAFF;
   --background-white: #fbfbfb;
+  --blue-accent: #00b8ce;
   /** Grey Scale */
   --grey-50: #f8fafc;
   --grey-100: #f1f5f9;
@@ -216,8 +217,34 @@ color: var(--grey-600);
   /* height: 100px; */
 }
 
+.divider-section-div{
+  background-color: #00b9ce7d;
+  width: var(--max-width);
+  height: 500px;
+  padding-left: 100px;
+  padding-right: 100px;
+  position:relative;
+       bottom:250px;
+/* top: 0; */
+}
 
+.video-fake-nav{
+  height: 2rem;
+  width: 500px;
+  background-color: #0c0e07;
+}
 
+.video-container{
+  overflow: hidden;
+  width: 500px;
+  height: 500px;
+  background-color: #00b8ce;
+  border-radius: 10px;
+}
+
+.technologies{
+
+}
 
 
 /** -------------------------------------- */
