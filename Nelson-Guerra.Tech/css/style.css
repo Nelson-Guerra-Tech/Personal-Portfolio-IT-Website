@@ -1,17 +1,19 @@
 /** Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto:wght@100;300;400&display=swap");
 /** ------------------------------ */
 /** --------GLOBAL MARGIN--------- */
 /** ------------------------------ */
 * {
   margin: 0;
-  font-family: var(--roboto);
+  font-family: var(--poppins);
 }
 /** ------------------------------ */
 /** --------GLOBAL STYLES--------- */
 /** ------------------------------ */
 :root {
   /** Font family */
+  --poppins: "Poppins", sans-serif;
   --roboto: "Roboto", sans-serif;
   --roboto-regular: 400;
   --roboto-light: 300;
@@ -20,6 +22,8 @@
   --smokey-black: #0c0e07;
   --corn-silk: #fefae0;
   --cyan-process: #5bc0eb;
+  --ghost-white: #FFFAFF;
+  --background-white: #fbfbfb;
   /** Grey Scale */
   --grey-50: #f8fafc;
   --grey-100: #f1f5f9;
@@ -62,6 +66,10 @@ body {
   width: 100vw;
   height: 100vh;
   background-color: #fefae0;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  flex-direction: column;
 }
 
 /** ------------------------------------ */
@@ -70,18 +78,50 @@ body {
 
 .top-nav-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  width: var(--max-width);
+  width: 100vw;
   height: 5rem;
-  background-color: var(--corn-silk);
+  background-color: var(--background-white);
   padding-left: 100px;
   padding-right: 100px;
+  /* letter-spacing: 2px; */
+}
+
+.nav-elements-container{
+  width: var(--max-width);
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--smokey-black);
+}
+
+.logo-container{
+   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-logo-div img{
+  height: 3rem;
+}
+
+.nav-logo-div p{
+  padding: 1rem 0rem 0rem .5rem;
+  font-size: 1.2rem;
 }
 
 .nav-div .nav-link {
   display: inline;
   color: var(--smokey-black);
+  font-size: 1.2rem;
 }
 
 /** -------------------------------------- */
@@ -89,11 +129,70 @@ body {
 /** -------------------------------------- */
 
 .hero-landing-container {
-  width: var(--max-width);
+  width: 100vw;
   height: 500px;
-  background-color: var(--corn-silk);
+  background-color: #fbfbfb;
   padding-left: 100px;
   padding-right: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: var(--smokey-black);
+}
+
+.hero-container{
+  width: var(--max-width);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-heading-div{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-heading-div img{
+  width: 5rem;
+}
+
+.main-heading-name{
+font-size: 5rem;
+font-weight: 700;
+}
+
+.main-heading-name-2{
+font-size: 5rem;
+font-weight: 700;
+color: var(--grey-600);
+}
+
+.main-heading-description{
+  font-size: 1.5rem;
+  color: var(--grey-500);
+  width: 700px;
+  text-align: center;
+}
+
+.main-heading-name span{ 
+}
+
+.rotate{
+  animation: rotate 3s infinite linear;
+
+}
+
+@keyframes rotate{
+   0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /** -------------------------------------- */
@@ -101,7 +200,26 @@ body {
 /** -------------------------------------- */
 
 .divider-section-container {
-  width: var(--max-width);
+  width: 100vw;
   height: 700px;
   background-color: var(--smokey-black);
 }
+
+.divider-svg-container{
+   width: var(--max-width);
+  /* height: 100px; */
+}
+
+.divider-svg-container svg{
+  width: 100vw;
+  /* background-color: var(--ghost-white); */
+  /* height: 100px; */
+}
+
+
+
+
+
+/** -------------------------------------- */
+/** --------MEDIA QUERIES----------------- */
+/** -------------------------------------- */
