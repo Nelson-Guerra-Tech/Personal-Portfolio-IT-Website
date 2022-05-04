@@ -15,17 +15,35 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+
+    <!-- FavIcon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon_io/android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
   </head>
+
+  <!-- Body Document -->
   <body>
     <header class="top-nav-container">
       <div class="nav-elements-container">
         <div class="nav-logo-div">
           <div class="logo-container">
-            <img
-              class=""
-              src="../vector files 4/SVG/SVG/Asset 2.svg"
-              alt="logo"
-            />
+            <img class="" src="../vector files 4/SVG/Asset 2.svg" alt="logo" />
             <p></p>
           </div>
         </div>
@@ -71,39 +89,40 @@
       <!-- divider content div -->
       <div class="divider-section-div">
         <!-- video container -->
-        <div class="video-container">
-          <div class="video-fake-nav"></div>
+        <div class="video-container-parent">
+          <div class="video-container">
+            <div class="video-fake-nav">
+              <div class="traffic-light-btns">
+                <div class="close"></div>
+                <div class="minimize"></div>
+                <div class="fullscreen"></div>
+              </div>
+              <div class="nav-title">
+                <p>Some Video</p>
+              </div>
+              <div class="setting-cog">
+                <img src="" alt="cog" />
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="technologies"></div>
+        <!-- END video container -->
+
+        <!-- Technologies Div -->
+        <div class="technologies">
+          <h2>Technologies used</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consectetur, consequuntur quae laborum aspernatur libero eligendi.
+            Tempora quasi rem commodi, perspiciatis et architecto eveniet nisi
+            eius sit velit debitis adipisci. Sit?
+          </p>
+        </div>
+        <!-- END Technologies Div -->
       </div>
     </section>
     <!-- END divider section -->
 
-    <!-- divider section -->
-    <section class="divider-section-container">
-      <!-- divider svg -->
-      <div class="divider-svg-container">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-          <path
-            fill="#fbfbfb"
-            fill-opacity="1"
-            d="M0,160L60,138.7C120,117,240,75,360,58.7C480,43,600,53,720,90.7C840,128,960,192,1080,181.3C1200,171,1320,85,1380,42.7L1440,0L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"
-          ></path>
-        </svg>
-      </div>
-      <!-- END divider svg -->
-
-      <!-- divider content div -->
-      <div class="divider-section-div">
-        <!-- video container -->
-        <div class="video-container">
-          <div class="video-fake-nav"></div>
-          <div class="video-container-styling"></div>
-        </div>
-        <div class="technologies"></div>
-      </div>
-    </section>
-    <!-- END divider section -->
     <!-- JavaScript -->
     <script type="javascript" src="./js/app.js"></script>
   </body>

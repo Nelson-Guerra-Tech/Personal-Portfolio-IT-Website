@@ -111,7 +111,7 @@ body {
 }
 
 .nav-logo-div img{
-  height: 3rem;
+  height: 2.5rem;
 }
 
 .nav-logo-div p{
@@ -143,7 +143,7 @@ body {
 }
 
 .hero-container{
-  width: var(--max-width);
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -204,10 +204,11 @@ color: var(--grey-600);
   width: 100vw;
   height: 700px;
   background-color: var(--smokey-black);
+ 
 }
 
 .divider-svg-container{
-   width: var(--max-width);
+   width: 100vw;
   /* height: 100px; */
 }
 
@@ -219,18 +220,22 @@ color: var(--grey-600);
 
 .divider-section-div{
   background-color: #00b9ce7d;
-  width: var(--max-width);
+  width: 100vw;
   height: 500px;
   padding-left: 100px;
   padding-right: 100px;
   position:relative;
-       bottom:250px;
+  bottom:150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 /* top: 0; */
 }
 
 .video-fake-nav{
   height: 2rem;
-  width: 500px;
+  width: 100%;
 /* From https://css.glass */
 background: rgba(255, 255, 255, 0.2);
 
@@ -240,16 +245,25 @@ backdrop-filter: blur(5px);
 border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+.video-container-parent{
+ display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .video-container{
   overflow: hidden;
   width: 500px;
   height: 500px;
-  background-color: var(--grey-700);
+  background-color: rgb(22, 22, 22);
   border-radius: 10px;
+ 
+  color: #FFFAFF;
 }
 
 .technologies{
-
+width: 500px;
+height: 500px;
 }
 
 
