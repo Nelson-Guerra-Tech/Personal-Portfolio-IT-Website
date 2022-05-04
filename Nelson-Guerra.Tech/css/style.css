@@ -204,6 +204,7 @@ color: var(--grey-600);
   width: 100vw;
   height: 700px;
   background-color: var(--smokey-black);
+  color: #FFFAFF;
  
 }
 
@@ -221,15 +222,16 @@ color: var(--grey-600);
 .divider-section-div{
   background-color: #00b9ce7d;
   width: 100vw;
-  height: 500px;
+  /* height: 700px; */
   padding-left: 100px;
   padding-right: 100px;
   position:relative;
-  bottom:150px;
+  bottom:200px; 
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  gap: 5rem;
 /* top: 0; */
 }
 
@@ -263,7 +265,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 
 .technologies{
 width: 500px;
-height: 500px;
+/* height: 500px; */
 }
 
 
