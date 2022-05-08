@@ -341,7 +341,7 @@ font-weight: 700;
 /** --------PROJECT SECTION--------------- */
 /** -------------------------------------- */
 
-.projects-section-container {
+.projects-section-container{
   width: 100vw;
   height: 500px;
   background-color: var(--smokey-black);
@@ -350,6 +350,9 @@ font-weight: 700;
   justify-content: center;
   align-items: center;
 }
+
+
+
 
 .project{
   width: 100vw;
@@ -361,6 +364,31 @@ font-weight: 700;
   align-items: center;
   gap: 8rem;
 }
+
+.project-2{
+    width: 100vw;
+  /* height: 700px; */
+  padding-left: 100px;
+  padding-right: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+  flex-direction: row-reverse;
+}
+
+.project-4{
+    width: 100vw;
+  /* height: 700px; */
+  padding-left: 100px;
+  padding-right: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+  flex-direction: row-reverse;
+}
+
 
 .project-img{
   overflow: hidden;
