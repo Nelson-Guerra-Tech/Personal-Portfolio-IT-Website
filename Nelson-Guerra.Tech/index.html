@@ -15,6 +15,8 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <!-- AOS Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <!-- FavIcon -->
     <link
@@ -58,9 +60,7 @@
     <section class="hero-landing-container">
       <div class="hero-container">
         <div class="main-heading-div">
-          <p class="main-heading-name">
-            👋 Hello, I'm <span style="color: #00b8ce">Nelson</span>!
-          </p>
+          <p class="main-heading-name">👋 Hello, I'm <span>Nelson</span>!</p>
           <!-- <p class="main-heading-name-2">I develop things for the web.</p> -->
           <p class="main-heading-description">
             A Software Developer with a degree in IT, based out of Georgia. I
@@ -80,7 +80,7 @@
           <path
             fill="#fbfbfb"
             fill-opacity="1"
-            d="M0,160L60,138.7C120,117,240,75,360,58.7C480,43,600,53,720,90.7C840,128,960,192,1080,181.3C1200,171,1320,85,1380,42.7L1440,0L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"
+            d="M0,32L40,69.3C80,107,160,181,240,202.7C320,224,400,192,480,165.3C560,139,640,117,720,101.3C800,85,880,75,960,112C1040,149,1120,235,1200,229.3C1280,224,1360,128,1400,80L1440,32L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"
           ></path>
         </svg>
       </div>
@@ -89,8 +89,8 @@
       <!-- divider content div -->
       <div class="divider-section-div">
         <!-- video container -->
-        <div class="video-container-parent">
-          <div class="video-container">
+        <div class="video-container-parent thumbnail">
+          <div class="video-container thumbnail">
             <!-- video navigation -->
             <div class="video-mock-nav">
               <div class="traffic-light-btns">
@@ -113,19 +113,46 @@
             <!-- technologies icons -->
             <div class="tech-icons">
               <div>
-                <h1>Languages & Technologies</h1>
+                <p data-aos="fade-up" data-aos-duration="1000">
+                  Languages & Technologies
+                </p>
               </div>
               <!-- icon svgs -->
-              <div class="svgs-div">
-                <div><img src="./img/icons8-html-5-96.svg" alt="html" /></div>
-                <div><img src="./img/icons8-css3-96.svg" alt="css3" /></div>
+              <div
+                class="svgs-div"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="100"
+              >
+                <div>
+                  <img src="./img/icons8-html-5-96.svg" alt="html" />
+                  <p class="icon-name">HTML5</p>
+                </div>
+                <div>
+                  <img src="./img/icons8-css3-96.svg" alt="css3" />
+                  <p class="icon-name">CSS3</p>
+                </div>
                 <div>
                   <img src="./img/icons8-javascript.svg" alt="javascript" />
+                  <p class="icon-name">JavaScript</p>
                 </div>
                 <div>
-                  <img src="./img/icons8-react-native.svg" alt="javascript" />
+                  <img src="./img/icons8-react-native.svg" alt="React" />
+                  <p class="icon-name">React</p>
+                </div>
+                <!-- <div>
+                  <img src="./img/icons8-node-js.svg" alt="javascript" />
+                </div> -->
+                <div>
+                  <img src="./img/icons8-git.svg" alt="Git" />
+                  <p class="icon-name">Git</p>
+                </div>
+                <div>
+                  <img src="./img/icons8-visual-studio.svg" alt="VS-Code" />
+                  <p class="icon-name">VS Code</p>
                 </div>
               </div>
+              <!-- <p class="icon-description">JavaScript - React -</p> -->
             </div>
             <!-- END technologies icons -->
           </div>
@@ -135,11 +162,181 @@
     </section>
     <!-- END divider section -->
 
+    <!-- Projects section -->
+    <section class="projects-section-container">
+      <div class="project" data-aos="fade-right" data-aos-duration="1000">
+        <div class="project-img">
+          <img src="./img/project-img.jpg" alt="project-img" />
+        </div>
+        <div class="project-description">
+          <h2>Project Descrition</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex animi
+            sapiente eius ut ipsa excepturi?
+          </p>
+          <div class="project-technologies">
+            <div class="tech-icon">
+              <img src="./img/icons8-html-5-96.svg" alt="html" />
+            </div>
+            <div class="tech-icon">
+              <img src="./img/icons8-css3-96.svg" alt="css3" />
+            </div>
+            <div class="tech-icon">
+              <img src="./img/icons8-javascript.svg" alt="javascript" />
+            </div>
+            <div class="tech-icon">
+              <img src="./img/icons8-react-native.svg" alt="React" />
+            </div>
+            <div class="tech-icon">
+              <img src="./img/icons8-git.svg" alt="Git" />
+            </div>
+          </div>
+          <div class="demo-btn-div">
+            <a href="#"><button class="demo-btn">View Demo</button></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END Projects section -->
+
+    <!-- Projects section -->
+    <section class="projects-section-container">
+      <div class="project">
+        <div class="project-img" data-aos="fade-right" data-aos-duration="1000">
+          <img src="./img/project-img.jpg" alt="project-img" />
+        </div>
+        <div
+          class="project-description"
+          class="project-img"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
+          <h2>Project Descrition</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex animi
+            sapiente eius ut ipsa excepturi?
+          </p>
+          <div class="project-technologies">
+            <div class="tech-icon">
+              <img src="./img/icons8-html-5-96.svg" alt="html" />
+            </div>
+            <div class="tech-icon">
+              <img src="./img/icons8-css3-96.svg" alt="css3" />
+            </div>
+            <div class="tech-icon">
+              <img src="./img/icons8-javascript.svg" alt="javascript" />
+            </div>
+            <div class="tech-icon">
+              <img src="./img/icons8-react-native.svg" alt="React" />
+            </div>
+            <div class="tech-icon">
+              <img src="./img/icons8-git.svg" alt="Git" />
+            </div>
+          </div>
+          <div class="demo-btn-div">
+            <a href="#"><button class="demo-btn">View Demo</button></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END Projects section -->
+
+    <!-- Projects section -->
+    <section class="projects-section-container">
+      <div class="project">
+        <div class="project-img" data-aos="fade-right" data-aos-duration="1000">
+          <img src="./img/project-img.jpg" alt="project-img" />
+        </div>
+        <div
+          class="project-description"
+          class="project-img"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
+          <h2>Project Descrition</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex animi
+            sapiente eius ut ipsa excepturi?
+          </p>
+          <div class="project-technologies">
+            <div class="tech-icon">
+              <img src="./img/icons8-html-5-96.svg" alt="html" />
+            </div>
+            <div class="tech-icon">
+              <img src="./img/icons8-css3-96.svg" alt="css3" />
+            </div>
+            <div class="tech-icon">
+              <img src="./img/icons8-javascript.svg" alt="javascript" />
+            </div>
+            <div class="tech-icon">
+              <img src="./img/icons8-react-native.svg" alt="React" />
+            </div>
+            <div class="tech-icon">
+              <img src="./img/icons8-git.svg" alt="Git" />
+            </div>
+          </div>
+          <div class="demo-btn-div">
+            <a href="#"><button class="demo-btn">View Demo</button></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END Projects section -->
+
+    <!-- Projects section -->
+    <section class="projects-section-container">
+      <div class="project">
+        <div class="project-img" data-aos="fade-right" data-aos-duration="1000">
+          <img src="./img/project-img.jpg" alt="project-img" />
+        </div>
+        <div
+          class="project-description"
+          class="project-img"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
+          <h2>Project Descrition</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex animi
+            sapiente eius ut ipsa excepturi?
+          </p>
+          <div class="project-technologies">
+            <div class="tech-icon">
+              <img src="./img/icons8-html-5-96.svg" alt="html" />
+            </div>
+            <div class="tech-icon">
+              <img src="./img/icons8-css3-96.svg" alt="css3" />
+            </div>
+            <div class="tech-icon">
+              <img src="./img/icons8-javascript.svg" alt="javascript" />
+            </div>
+            <div class="tech-icon">
+              <img src="./img/icons8-react-native.svg" alt="React" />
+            </div>
+            <div class="tech-icon">
+              <img src="./img/icons8-git.svg" alt="Git" />
+            </div>
+          </div>
+          <div class="demo-btn-div">
+            <a href="#"><button class="demo-btn">View Demo</button></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END Projects section -->
+
     <!-- JavaScript -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      // AOS Animations
+      AOS.init();
+    </script>
+    <!-- font awesome icons -->
     <script
       src="https://kit.fontawesome.com/7f2b976714.js"
       crossorigin="anonymous"
     ></script>
+    <!-- main js file -->
     <script type="javascript" src="./js/app.js"></script>
   </body>
 </html>
