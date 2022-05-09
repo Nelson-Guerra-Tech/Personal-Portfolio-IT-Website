@@ -96,8 +96,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .nav-logo-div{
@@ -225,19 +225,13 @@ color: var(--grey-600);
 }
 
 .divider-section-div{
-  /* background-color: #00b9ce7d; */
   width: 100vw;
-  /* height: 700px; */
   padding-left: 100px;
   padding-right: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  /* flex-direction: column; 
-  flex-wrap: wrap; */
-  /* gap: 5rem; */
-/* top: 0; */
 }
 
 /** Top navigation for video mock container */
@@ -310,11 +304,20 @@ color: var(--grey-600);
 
 .svgs-div{
   display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+  /* width: 20px; */
+}
+
+.svgs-div img{
+  width: 5rem;
 }
 
 .tech-icons{
   height: 300px;
-  width: 600px;
+  width: 100%;
   /* background-color: #00b8ce; */
   position: absolute;
   top: 20%;
@@ -335,6 +338,23 @@ font-weight: 700;
   text-align: center;
   font-weight: 400;
 }
+
+.rotate {
+  animation: spin 4s infinite linear;
+}
+
+.react-logo {
+  display: block;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
 /** END of Top navigation for video mock container */
 
 /** -------------------------------------- */
@@ -349,6 +369,8 @@ font-weight: 700;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
 
@@ -356,7 +378,6 @@ font-weight: 700;
 
 .project{
   width: 100vw;
-  /* height: 700px; */
   padding-left: 100px;
   padding-right: 100px;
   display: flex;
@@ -367,7 +388,6 @@ font-weight: 700;
 
 .project-2{
     width: 100vw;
-  /* height: 700px; */
   padding-left: 100px;
   padding-right: 100px;
   display: flex;
@@ -379,7 +399,6 @@ font-weight: 700;
 
 .project-4{
     width: 100vw;
-  /* height: 700px; */
   padding-left: 100px;
   padding-right: 100px;
   display: flex;
@@ -416,7 +435,7 @@ font-weight: 700;
 .project-technologies{
   width: 2rem;
   display: flex;
-  gap: .5rem;
+  gap: .2rem;
 }
 
 .project-technologies img{
@@ -435,7 +454,7 @@ font-weight: 700;
   color: #fbfbfb;
   cursor: pointer;
   height: 44px;
-  margin: 12px 0 0;
+  margin: 1.5rem 0 0;
   outline: none;
   text-align: center;
   text-transform: none;
@@ -452,6 +471,93 @@ font-weight: 700;
   color: #fbfbfb;
 }
 
+/** -------------------------------------- */
+/** --------ABOUT ME SECTION-------------- */
+/** -------------------------------------- */
+
+.about-me-section-container{
+  width: 100vw;
+  height: 500px;
+  background-color: var(--smokey-black);
+  color: #FFFAFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.project{
+  width: 100vw;
+  padding-left: 100px;
+  padding-right: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+}
+
+.about-me-img{
+  overflow: hidden;
+}
+
+.about-me-img img{
+  width: 400px;
+  border-radius: 10px;
+}
+
+.about-me-div{
+  width: 600px;
+}
+
+.about-me-div h2{
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.about-me-div p{
+  color: rgb(120, 120, 120);
+  font-size: 1.5rem;
+}
+
+.project-technologies{
+  width: 2rem;
+  display: flex;
+  gap: .5rem;
+}
+
+.project-technologies img{
+  width: 3rem;
+}
+
+/* Btn CSS */
+.resume-btn {
+  appearance: button;
+  backface-visibility: hidden;
+  background-color: #00b8ce;
+  border-radius: 10px;
+  border-width: 0;
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+  box-sizing: border-box;
+  color: #fbfbfb;
+  cursor: pointer;
+  height: 44px;
+  margin: .5rem 0 0;
+  outline: none;
+  text-align: center;
+  text-transform: none;
+  transform: translateZ(0);
+  transition: all .3s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 10rem;
+}
+
+.resume-btn a{
+  text-decoration: none;
+  color: #fbfbfb;
+}
 
 /** -------------------------------------- */
 /** --------MEDIA QUERIES----------------- */
