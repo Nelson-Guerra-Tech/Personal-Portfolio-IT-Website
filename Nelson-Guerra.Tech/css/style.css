@@ -262,7 +262,7 @@ color: var(--grey-600);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: .5rem 1rem .5rem 1rem;;
+  padding: .5rem 1rem .5rem 1rem;
 }
 
 .traffic-light-btns{
@@ -557,6 +557,33 @@ font-weight: 700;
 .resume-btn a{
   text-decoration: none;
   color: #fbfbfb;
+}
+
+/** -------------------------------------- */
+/** --------FOOTER------------------------ */
+/** -------------------------------------- */
+
+footer{
+  width: 100vw;
+  height: 15rem;
+  background-color: #222;
+  padding-left: 100px;
+  padding-right: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.made-with-love{
+  width: 40rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+footer .made-with-love p{
+  color: var(--ghost-white);
 }
 
 /** -------------------------------------- */
