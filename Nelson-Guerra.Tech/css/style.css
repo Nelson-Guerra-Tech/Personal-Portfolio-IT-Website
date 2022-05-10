@@ -477,12 +477,13 @@ font-weight: 700;
 
 .about-me-section-container{
   width: 100vw;
-  height: 500px;
+  height: 800px;
   background-color: #fbfbfb;
   color: #FFFAFF;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  /* flex-direction: column; */
   flex-wrap: wrap;
   padding-left: 100px;
   padding-right: 100px;
@@ -490,6 +491,7 @@ font-weight: 700;
 
 .divider-svg-container-bottom{
   width: 100vw;
+  height: 200px;
   /* height: 100px; */
 }
 
