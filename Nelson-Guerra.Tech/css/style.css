@@ -71,6 +71,7 @@ body {
   justify-content: center;
   align-items: center; */
   flex-direction: column;
+  transition: all .4s ease-in-out;
 }
 
 /** ------------------------------------ */
@@ -139,7 +140,7 @@ body {
   padding-left: 100px;
   padding-right: 100px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   flex-direction: column;
   color: var(--smokey-black);
@@ -198,6 +199,19 @@ color: var(--grey-600);
   100% {
     transform: rotate(360deg);
   }
+}
+
+.hero-container-cta{
+  width: 100vw;
+  height: 80px;
+  background-color: #7c7c7c;
+  padding-left: 100px;
+  padding-right: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: var(--smokey-black);
 }
 
 /** -------------------------------------- */
