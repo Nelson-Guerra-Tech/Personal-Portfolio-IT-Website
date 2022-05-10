@@ -66,7 +66,7 @@
 body {
   width: 100vw;
   height: 100vh;
-  background-color: #fefae0;
+  background-color: #fbfbfb;
   /* display: flex;
   justify-content: center;
   align-items: center; */
@@ -478,13 +478,25 @@ font-weight: 700;
 .about-me-section-container{
   width: 100vw;
   height: 500px;
-  background-color: var(--smokey-black);
+  background-color: #fbfbfb;
   color: #FFFAFF;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   padding-left: 100px;
   padding-right: 100px;
+}
+
+.divider-svg-container-bottom{
+  width: 100vw;
+  /* height: 100px; */
+}
+
+.divider-svg-container-bottom svg{
+  width: 100vw;
+  /* background-color: var(--ghost-white); */
+  /* height: 100px; */
 }
 
 .project{
@@ -557,6 +569,22 @@ font-weight: 700;
 .resume-btn a{
   text-decoration: none;
   color: #fbfbfb;
+}
+
+/** -------------------------------------- */
+/** --------CONTACT SECTION--------------- */
+/** -------------------------------------- */
+
+.contact-section-container{
+   width: 100vw;
+  height: 500px;
+  background-color: #000000;
+  color: #FFFAFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
 /** -------------------------------------- */
