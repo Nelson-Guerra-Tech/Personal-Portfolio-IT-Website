@@ -187,6 +187,10 @@ color: var(--grey-600);
   color: #00b8ce;
 }
 
+.main-heading-description span{ 
+  color: #00b8ce;
+}
+
 .rotate{
   animation: rotate 3s infinite linear;
 
@@ -204,15 +208,20 @@ color: var(--grey-600);
 .hero-container-cta{
   width: 100vw;
   height: 80px;
-  background-color: #7c7c7c;
+  /* background-color: #7c7c7c; */
   padding-left: 100px;
   padding-right: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   color: var(--smokey-black);
 }
+ .hero-container-cta div{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
 
 /** -------------------------------------- */
 /** --------DIVIDER SECTION STYLES-------- */
@@ -530,7 +539,8 @@ font-weight: 700;
 }
 
 .about-me-img img{
-  width: 400px;
+  /* width: 400px; */
+  height: 25rem;
   border-radius: 10px;
 }
 
@@ -548,13 +558,13 @@ font-weight: 700;
   font-size: 1.5rem;
 }
 
-.project-technologies{
+.about-me-links{
   width: 2rem;
   display: flex;
   gap: .5rem;
 }
 
-.project-technologies img{
+.about-me-links img{
   width: 3rem;
 }
 
