@@ -555,7 +555,7 @@ font-weight: 700;
 
 .about-me-div p{
   color: rgb(120, 120, 120);
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 
 .about-me-links{
@@ -603,15 +603,81 @@ font-weight: 700;
 
 .contact-section-container{
    width: 100vw;
-  height: 500px;
-  background-color: #000000;
-  color: #FFFAFF;
+  height: 600px;
+  background-color: #fbfbfb;
   display: flex;
   justify-content: center;
   align-items: center;
   padding-left: 100px;
   padding-right: 100px;
 }
+
+.row{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--smokey-black);
+}
+
+.row label{
+  font-size: 1.2rem;
+}
+
+.contact-me-heading{
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.contact-me-p{
+  color: rgb(120, 120, 120);
+  font-size: 1.6rem;
+}
+
+/* Btn CSS */
+.submit-btn {
+  appearance: button;
+  backface-visibility: hidden;
+  background-color: #00b8ce;
+  border-radius: 10px;
+  border-width: 0;
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+  box-sizing: border-box;
+  color: #fbfbfb;
+  cursor: pointer;
+  height: 44px;
+  margin: 1rem 0 0 0rem;
+  outline: none;
+  text-align: center;
+  text-transform: none;
+  transform: translateZ(0);
+  transition: all .3s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 10rem;
+}
+
+.form-controls{
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: rgb(120, 120, 120);
+    background-color: #fbfbfb;
+    background-clip: padding-box;
+    border: 1px solid var(--smokey-black);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 10px;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+ .row textarea{
+   resize: none;
+ }
 
 /** -------------------------------------- */
 /** --------FOOTER------------------------ */
