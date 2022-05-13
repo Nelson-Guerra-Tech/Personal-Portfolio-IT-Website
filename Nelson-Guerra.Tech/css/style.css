@@ -127,6 +127,12 @@ body {
   display: inline;
   color: var(--smokey-black);
   font-size: 1.2rem;
+  transition: all .3s ease-in-out;
+}
+
+.nav-div a:hover{
+font-size: 1.5rem;
+color: #00b8ce;
 }
 
 /** -------------------------------------- */
@@ -489,9 +495,14 @@ font-weight: 700;
   width: 10rem;
 }
 
-.demo-btn a{
+.demo-btn-div a{
   text-decoration: none;
   color: #fbfbfb;
+}
+
+.demo-btn:hover {
+background-color: transparent;
+color: #00b8ce;
 }
 
 /** -------------------------------------- */
@@ -597,6 +608,11 @@ font-weight: 700;
   color: #fbfbfb;
 }
 
+.resume-btn:hover {
+background-color: transparent;
+color: var(--smokey-black);
+}
+
 /** -------------------------------------- */
 /** --------CONTACT SECTION--------------- */
 /** -------------------------------------- */
@@ -658,6 +674,11 @@ font-weight: 700;
   width: 10rem;
 }
 
+.submit-btn:hover {
+background-color: transparent;
+color: var(--smokey-black);
+}
+
 .form-controls{
     display: block;
     width: 100%;
@@ -706,6 +727,50 @@ footer .made-with-love p{
   color: var(--ghost-white);
 }
 
+.back-top-btn {
+  appearance: button;
+  backface-visibility: hidden;
+  background-color: #00b8ce;
+  border-radius: 10px;
+  border-width: 0;
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+  box-sizing: border-box;
+  color: #fbfbfb;
+  cursor: pointer;
+  height: 44px;
+  margin: 1rem 0 0 0rem;
+  outline: none;
+  text-align: center;
+  text-transform: none;
+  transform: translateZ(0);
+  transition: all .3s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 10rem;
+}
+
+.back-top-btn a{
+  text-decoration: none;
+  color: #fbfbfb;
+}
+
 /** -------------------------------------- */
 /** --------MEDIA QUERIES----------------- */
 /** -------------------------------------- */
+
+@media only screen and (max-width: 600px){
+
+}
+
+@media only screen and (max-width: 768px){
+  
+}
+
+@media only screen and (max-width: 992px){
+  
+}
+
+@media only screen and (max-width: 1200px){
+  
+}
